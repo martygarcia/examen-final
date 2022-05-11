@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+    <title>Funciones HTML</title>
+    <script src="Jquery/jquery-1.6.3.min.js"></script>
+	
+      <link rel="stylesheet" type="text/css" href="css/Nuevo103.css">
+      
+  <style>
+    img {
+      width: 200px;
+    }
+  </style>
+
+     <script>
+         
+         $(document).ready(function() {
+             
+             var elementos = document.querySelectorAll("img");
+                           
+         for(var i=0;i<elementos.length;i++) {
+            			
+		   elementos[i].addEventListener("mouseout", cambiar, false);
+           elementos[i].addEventListener("mouseover", restaurar, false);
+                        
+         }
+         });
+             
+            function cambiar(e) {
+                 
+            if(e.target == img1) {
+                
+            $("#img5").attr("src",  "imagenes/img1.jpg");
+                      
+                  }
+                 
+            else if(e.target == img2) {
+                
+            $("#img5").attr("src", "imagenes/img2.jpg"); 
+                
+            }
+            
+            else if(e.target == img3) {
+                
+            $("#img5").attr("src", "imagenes/img3.jpg");
+                
+            } 
+                 
+            else if(e.target == img4) {
+                
+            $("#img5").attr("src", "imagenes/img5.jpg");
+                
+            }
+            else if(e.target == img6) {
+                
+                $("#img5").attr("src", "imagenes/img6.jpg");
+                    
+                }
+            else if(e.target == img7) {
+                
+                $("#img5").attr("src", "imagenes/img7.jpg");
+                    
+                } 
+            else if(e.target == img8) {
+                
+                $("#img5").attr("src", "imagenes/img8.jpg");
+                    
+              }
+             }
+         
+         
+            function restaurar(e) {
+                 
+            if(e.target == img1) {
+                
+            $("#img5").attr("src",  "imagenes/img1.jpg");
+                      
+                  }
+                 
+                else if(e.target == img2) {
+                
+              $("#img5").attr("src", "imagenes/img2.jpg"); 
+                
+            }
+            
+            else if(e.target == img3) {
+                
+            $("#img5").attr("src", "imagenes/img3.jpg");
+                
+            } 
+                 
+            else if(e.target == img4) {
+                
+            $("#img5").attr("src", "imagenes/img5.jpg");
+                
+            }
+
+            else if(e.target == img6) {
+                
+            $("#img5").attr("src", "imagenes/img6.jpg");
+                    
+            }
+
+            else if(e.target == img7) {
+                
+            $("#img5").attr("src", "imagenes/img7.jpg");
+                        
+            }
+
+            else if(e.target == img8) {
+                
+                $("#img5").attr("src", "imagenes/img8.jpg");
+                            
+                }
+                 
+             }
+         
+    </script>
+    
+   </head>
+      
+      <body>
+      
+      <h1>Galería de imágenes</h1>
+      
+          <table width="100%" border="0">
+
+           <td><img src="imagenes/img1.jpg" id="img1"></td>
+            <td><img src="imagenes/img2.jpg" id="img2"></td> 
+            <td><img src="imagenes/img3.jpg" id="img3"></td> 
+            
+            <tr>
+              <td><img src="imagenes/img5.jpg" id="img4"></td>  
+              <td><img src="" id="img5"></td>  
+              <td><img src="imagenes/img6.jpg" id="img6"></td>
+            </tr>
+            <tr>
+              <td><img src="imagenes/img7.jpg" id="img7"></td>  
+              <td><img src="imagenes/img8.jpg" id="img8"></td>  
+              <td><img src="imagenes/img8.jpg" id="img4"></td>  
+
+            </tr>
+              
+          </table>
+      
+     </body>
+     
+</html>

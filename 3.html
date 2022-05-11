@@ -1,1 +1,55 @@
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+    <title>Funciones HTML</title>
+    <script src="jquery-1.6.3.min.js"></script>
+	
+      <link rel="stylesheet" type="text/css" href="css/Nuevo103.css">
+      
+  <style>
+    img {
+      width: 200px;
+    }
+  </style>
+
+<script>
+         
+  $(document).ready(function() {
+    
+    document.getElementById("#mover_foto1").addEventListener("mouseover",cambiar, false);
+  });
+
+  function cambiar () {
+    $("#mover_foto1").attr("scr","imagenes/img4.jpg");
+  }
+   
+</script>
+
+</head>
+
+<body>
+
+<h1>Galería de imágenes</h1>
+
+    <table>
+      <tr>
+        <td><img id="mover_foto1" src="imagenes/img1.jpg"  alt=""></td>
+        <td><img src="imagenes/img2.jpg" id="mover_foto" alt=""></td>
+        <td><img src="imagenes/img3.jpg" id="mover_foto" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="imagenes/img4.jpg" id="mover_foto" alt=""></td>
+        <td><img id="poner_foto" src="" alt=""></td>
+        <td><img src="imagenes/img6.jpg" id="mover_foto" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="imagenes/img7.jpg" id="mover_foto" alt=""></td>
+        <td><img src="imagenes/img8.jpg" id="mover_foto" alt=""></td>
+        <td><img src="imagenes/img5.jpg" id="mover_foto" alt=""></td>
+      </tr>
+    </table>
+      
+     </body>
+     
+</html>
