@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Documento sin título</title>
+    
+<script>
+ 
+    var aleatorio=Math.round(Math.random()*100);
+    
+    var minum, intentos;
+    
+    minum=0;
+    
+    intentos=0;
+    
+    do{
+    
+    minium=prompt("Introduce un nº entre 0 y 100");
+    
+    if(aleatorio>minum) {
+        
+        alert("Mas alto");
+        
+        }
+    
+    if(aleatorio<minum) {
+        
+        alert("Mas bajo");
+    }
+    
+    intentos++;
+        
+        
+    }while(aleatorio!=minum);
+    
+    alert("Correcto. Has consumido" + intentos + "intentos");
+    
+        
+</script>
+    
+    
+    
+    </head>
+    
